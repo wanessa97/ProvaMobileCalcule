@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calcule</string>
+    <string name="enviar">Enviar</string>
+    <string name="nome">Tela 2</string>
+    <string name="c">C°</string>
+    <string name="o_grau_celsius">O Grau Celsius é:</string>
+    <string name="o_grau_em_fahrenheit">O Grau em Fahrenheit é:</string>
+    <string name="converter_para_graus_celsius">CONVERTER PARA GRAUS CELSIUS</string>
+    <string name="informe_o_grau_fahrenheit">Informe o Grau Fahrenheit:</string>
+    <string name="informe_o_grau_celsius">Informe o Grau Celsius:</string>
+    <string name="converter_para_fahrenheit">Converter para Fahrenheit</string>
+</resources>

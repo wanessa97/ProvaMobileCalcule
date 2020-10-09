@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConversorTemperatura">
+
+    <TextView
+        android:id="@+id/InformeGrau"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/informe_o_grau_celsius"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/GrausCeusius"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/InformeGrau"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/InformeGrau"
+        app:layout_constraintTop_toBottomOf="@+id/InformeGrau" />
+
+    <Button
+        android:id="@+id/ConverterFahrenheit"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="#7BA9BD"
+        android:text="@string/converter_para_fahrenheit"
+        app:layout_constraintEnd_toEndOf="@+id/GrausCeusius"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="@+id/GrausCeusius"
+        app:layout_constraintTop_toBottomOf="@+id/GrausCeusius" />
+
+    <TextView
+        android:id="@+id/InformeFahrenheit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/informe_o_grau_fahrenheit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/InformeGrau"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/InformeGrau"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewResultadoF"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/GrauFahrenheit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/InformeGrau"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/InformeGrau"
+        app:layout_constraintTop_toBottomOf="@+id/InformeFahrenheit"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ConverterCeusius"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="#7BA9BD"
+        android:text="@string/converter_para_graus_celsius"
+        app:layout_constraintEnd_toEndOf="@+id/GrauFahrenheit"
+        app:layout_constraintStart_toStartOf="@+id/GrauFahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/GrauFahrenheit" />
+
+    <TextView
+        android:id="@+id/TextViewResultadoF"
+        android:layout_width="139dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Grau Fahrenheit:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/InformeGrau"
+        app:layout_constraintTop_toBottomOf="@+id/ConverterFahrenheit" />
+
+    <TextView
+        android:id="@+id/ResultadoF"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:text="F°"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/GrausCeusius"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/TextViewResultadoF"
+        app:layout_constraintTop_toBottomOf="@+id/ConverterFahrenheit" />
+
+    <TextView
+        android:id="@+id/textViewResultadoC"
+        android:layout_width="127dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:text="Grau Celsius:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/TextViewResultadoF"
+        app:layout_constraintTop_toBottomOf="@+id/ConverterCeusius"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/ResultadoC"
+        android:layout_width="54dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/c"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/GrauFahrenheit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewResultadoC"
+        app:layout_constraintTop_toBottomOf="@+id/ConverterCeusius"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Button
+        android:id="@+id/limpar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultadoC"
+        app:layout_constraintVertical_bias="0.421" />
+</androidx.constraintlayout.widget.ConstraintLayout>

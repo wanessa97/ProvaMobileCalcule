@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#F0F4F6"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/calcuSimples"
+        android:layout_width="198dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#7BA9BD"
+        android:text="Calculadora Simples"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTipo" />
+
+    <TextView
+        android:id="@+id/tituloTipo"
+        android:layout_width="176dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        android:background="#03FFFFFF"
+        android:text="O QUE DESEJA CALCULAR?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CalDesconto"
+        android:layout_width="198dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#7BA9BD"
+        android:text="Calculadora para Descontos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcuSimples" />
+
+    <Button
+        android:id="@+id/ConTempe"
+        android:layout_width="198dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#7BA9BD"
+        android:text="Conversão de Temperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalDesconto" />
+
+
+    <ImageView
+
+        android:layout_width="135dp"
+        android:layout_height="98dp"
+
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/calcula"
+        app:layout_constraintEnd_toStartOf="@+id/tituloTipo"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
